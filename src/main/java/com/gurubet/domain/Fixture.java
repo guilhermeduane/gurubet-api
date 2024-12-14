@@ -6,7 +6,6 @@ import lombok.ToString;
 
 import java.time.Instant;
 import java.util.Collection;
-import java.util.List;
 
 @Entity
 @Data

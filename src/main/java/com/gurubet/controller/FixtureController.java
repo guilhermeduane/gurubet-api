@@ -19,8 +19,6 @@ public class FixtureController {
 
     @GetMapping
     public List<Fixture> getAllFixtures() {
-
-        List<Fixture> fixtureList = fixtureService.getAllFixtures();
         return fixtureService.getAllFixtures();
     }
 }
