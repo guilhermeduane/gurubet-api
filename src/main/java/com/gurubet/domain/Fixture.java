@@ -1,12 +1,16 @@
-package com.gurubet.gurubet.domain;
+package com.gurubet.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
 import java.time.Instant;
+import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Data
+@ToString(exclude = "odd")
 public class Fixture {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,5 +28,8 @@ public class Fixture {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "team_away_id")
     private Team teamAway;
+
+    @OneToMany(mappedBy = "fixture", fetch = FetchType.LAZY)
+    private Collection<Odd> odd;
 
 }

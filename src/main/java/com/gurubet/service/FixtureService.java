@@ -1,8 +1,7 @@
-package com.gurubet.gurubet.service;
+package com.gurubet.service;
 
-import com.gurubet.gurubet.domain.Fixture;
-import com.gurubet.gurubet.repository.FixtureRepository;
-import com.gurubet.gurubet.repository.LeagueRepository;
+import com.gurubet.domain.Fixture;
+import com.gurubet.repository.FixtureRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

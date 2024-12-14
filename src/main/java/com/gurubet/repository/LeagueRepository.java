@@ -1,6 +1,6 @@
-package com.gurubet.gurubet.repository;
+package com.gurubet.repository;
 
-import com.gurubet.gurubet.domain.League;
+import com.gurubet.domain.League;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

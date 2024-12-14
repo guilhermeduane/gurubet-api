@@ -1,9 +1,9 @@
-package com.gurubet.gurubet.service;
+package com.gurubet.service;
 
 
 
-import com.gurubet.gurubet.domain.Market;
-import com.gurubet.gurubet.repository.MarketRepository;
+import com.gurubet.domain.Market;
+import com.gurubet.repository.MarketRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

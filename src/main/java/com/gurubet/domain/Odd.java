@@ -1,12 +1,15 @@
-package com.gurubet.gurubet.domain;
+package com.gurubet.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
 @Entity
 @Data
+@ToString(exclude = "fixture")
 public class Odd {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,5 +27,6 @@ public class Odd {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "fixture_id")
+    @JsonBackReference
     private Fixture fixture;
 }

@@ -1,8 +1,8 @@
-package com.gurubet.gurubet.controller;
+package com.gurubet.controller;
 
 
-import com.gurubet.gurubet.domain.Market;
-import com.gurubet.gurubet.service.MarketService;
+import com.gurubet.domain.Market;
+import com.gurubet.service.MarketService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,8 +1,8 @@
-package com.gurubet.gurubet.service;
+package com.gurubet.service;
 
 
-import com.gurubet.gurubet.domain.Bookmaker;
-import com.gurubet.gurubet.repository.BookmakerRepository;
+import com.gurubet.domain.Bookmaker;
+import com.gurubet.repository.BookmakerRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

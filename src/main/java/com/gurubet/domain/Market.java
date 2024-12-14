@@ -1,4 +1,4 @@
-package com.gurubet.gurubet.domain;
+package com.gurubet.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,10 +8,9 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Team {
+public class Market {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String logo;
 }
