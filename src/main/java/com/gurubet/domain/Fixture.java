@@ -2,14 +2,11 @@ package com.gurubet.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.ToString;
-
 import java.time.Instant;
 import java.util.Collection;
 
 @Entity
 @Data
-@ToString(exclude = "odd")
 public class Fixture {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
