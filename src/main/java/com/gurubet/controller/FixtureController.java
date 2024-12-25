@@ -23,4 +23,10 @@ public class FixtureController {
     public List<Fixture> getAllFixtures() {
         return fixtureService.getAllFixtures();
     }
+
+    @CrossOrigin(origins = "http://localhost:4200")
+    @GetMapping("/high-odds")
+    public List<Fixture> getAllFixturesWithHighOdds() {
+        return fixtureService.getAllFixturesWithHighOdds();
+    }
 }

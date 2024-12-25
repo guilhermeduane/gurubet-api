@@ -9,7 +9,6 @@ import java.math.BigDecimal;
 
 @Entity
 @Data
-@ToString(exclude = "fixture")
 public class Odd {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
